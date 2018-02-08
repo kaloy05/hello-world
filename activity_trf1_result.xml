@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_trf1_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/bakgd"
+    tools:context="com.ict.acer.ictquiz.Trf1ResultActivity">
+    <TextView
+        android:background="@color/allBack"
+        android:id="@+id/textScore"
+        android:fontFamily="elephant"
+        android:textColor="#FF4"
+        android:text="Your Score:"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <TextView
+        android:background="@color/allBack"
+        android:id="@+id/textHighScore"
+        android:fontFamily="elephant"
+        android:textColor="#FF4"
+        android:text="High Score:"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="130dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="2dp"
+        android:id="@+id/linearLayout10">
+        <Button
+            android:text="Retry"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/button"
+            android:textColor="#fff"
+            android:padding="8dp"
+            android:gravity="center"
+            android:id="@+id/retry"
+            android:layout_width="200dp"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/linearLayout4">
+        <Button
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="menu"
+            android:id="@+id/mnu"
+            android:onClick="mnu_onClick"
+            android:background="@drawable/button"
+            android:layout_marginRight="4dp"
+            android:layout_width="90dp"
+            android:layout_height="70dp" />
+        <Button
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="category"
+            android:id="@+id/ctgory"
+            android:onClick="ctgory_onClick"
+            android:background="@drawable/button"
+            android:layout_marginRight="4dp"
+            android:layout_width="90dp"
+            android:layout_height="70dp" />
+        <Button
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Level"
+            android:id="@+id/lvl"
+            android:onClick="lvl_onClick"
+            android:background="@drawable/button"
+            android:layout_width="90dp"
+            android:layout_height="70dp" />
+    </LinearLayout>
+</LinearLayout>
